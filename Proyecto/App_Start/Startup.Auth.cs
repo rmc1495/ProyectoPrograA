@@ -47,20 +47,21 @@ namespace IdentitySample
 
             // Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            //    clientId: "48dc6995-a8ea-4dae-a686-b9974db8f742",
+            //    clientSecret: "pmnhoeD4OOH4h03hdE10R6x");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            app.UseTwitterAuthentication(
+               consumerKey: "G7VYoZV9eCeQ62kSG7QBEe1Qg",
+               consumerSecret: "TOD1hZ4HzvW8lfhAT6vksjdRI4YYvDv6hovWGdQ8w5XGPAJAN9");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "908484579263973",
+               appSecret: "d31d904a3c19f4e4ce9dc52e7d7cc967");
 
-            //app.UseGoogleAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseGoogleAuthentication(
+                clientId: "500379249008-ksqqsvsr02f98aji65s6alb4mk5pii0c.apps.googleusercontent.com",
+                clientSecret: "S2WilhV5lInZ0CsArX7snCq2");
+            
         }
     }
 }
