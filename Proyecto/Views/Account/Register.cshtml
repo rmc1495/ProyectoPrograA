@@ -1,11 +1,11 @@
 ﻿@model IdentitySample.Models.RegisterViewModel
 @{
-    ViewBag.Title = "Register";
+    ViewBag.Title = "Registrar";
 }
 
 <h2>@ViewBag.Title.</h2>
 @using reCAPTCHA.MVC
-@using (Html.BeginForm("Register", "Account", FormMethod.Post,
+@using (Html.BeginForm("Registrar", "Account", FormMethod.Post,
                 new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
