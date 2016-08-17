@@ -63,7 +63,11 @@ namespace IdentitySample.Models
             return new ApplicationDbContext();
         }
 
-        
+        public System.Data.Entity.DbSet<Proyecto.Models.tareasModels> tareasModels { get; set; }
+
+        public System.Data.Entity.DbSet<Proyecto.Models.estadoModels> estadoModels { get; set; }
+
+        public System.Data.Entity.DbSet<Proyecto.Models.proyectosModels> proyectosModels { get; set; }
     }
     public class ApplicationRole : IdentityRole
     {

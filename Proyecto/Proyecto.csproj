@@ -403,6 +403,21 @@
     <Content Include="Scripts\jquery-3.1.0.slim.min.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
+    <Content Include="Views\tareasModels\Create.cshtml" />
+    <Content Include="Views\tareasModels\Delete.cshtml" />
+    <Content Include="Views\tareasModels\Details.cshtml" />
+    <Content Include="Views\tareasModels\Edit.cshtml" />
+    <Content Include="Views\tareasModels\Index.cshtml" />
+    <Content Include="Views\estadoModels\Create.cshtml" />
+    <Content Include="Views\estadoModels\Delete.cshtml" />
+    <Content Include="Views\estadoModels\Details.cshtml" />
+    <Content Include="Views\estadoModels\Edit.cshtml" />
+    <Content Include="Views\estadoModels\Index.cshtml" />
+    <Content Include="Views\proyectosModels\Create.cshtml" />
+    <Content Include="Views\proyectosModels\Delete.cshtml" />
+    <Content Include="Views\proyectosModels\Details.cshtml" />
+    <Content Include="Views\proyectosModels\Edit.cshtml" />
+    <Content Include="Views\proyectosModels\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -471,19 +486,29 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\estadoModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\proyectosModelsController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
+    <Compile Include="Controllers\tareasModelsController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\estadoModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\proyectosModels.cs" />
+    <Compile Include="Models\tareasModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Proyectos\" />
+    <Folder Include="Views\Tareas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
