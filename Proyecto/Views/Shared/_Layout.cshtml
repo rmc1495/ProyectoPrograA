@@ -25,17 +25,23 @@
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     @*<li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                    
 
                     @if (Request.IsAuthenticated && User.IsInRole("Admin")) {
                         <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
                         <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
+                        <li>@Html.ActionLink("Tareas", "Index", "tareasModels")</li>
+                        <li>@Html.ActionLink("Proyectos", "Index", "proyectosModels")</li>
+                        <li>@Html.ActionLink("Estados", "Index", "estadoModels")</li>
+
+
                         @*<li>@Html.ActionLink("Proyectos", "Index", "ProyectosModels")</li>*@
                     }
 
                     @if (Request.IsAuthenticated && User.IsInRole("Junior"))
                     {
-                        
-                        <li>@Html.ActionLink("Proyectos", "Index", "ProyectosModels")</li>
+
+                        <li>@Html.ActionLink("Tareas", "Index", "tareasModels")</li>
                     }
 
 

@@ -78,12 +78,16 @@ namespace IdentitySample.Models
         public string ConfirmPassword { get; set; }
 
         // Add the new address properties:
+        [Display(Name = "Distrito")]
         public string Address { get; set; }
+        [Display(Name = "Canton")]
         public string City { get; set; }
+
+        [Display(Name = "Provincia")]
         public string State { get; set; }
 
         // Use a sensible display name for views:
-        [Display(Name = "Postal Code")]
+        [Display(Name = "Codigo Postal")]
         public string PostalCode { get; set; }
     }
 
@@ -101,7 +105,7 @@ namespace IdentitySample.Models
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
+        [Display(Name = "Confirme password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 

@@ -21,7 +21,7 @@ namespace IdentitySample.Models
         public string City { get; set; }
         public string State { get; set; }
 
-        [Display(Name = "Postal Code")]
+        [Display(Name = "Codigo Postal")]
         public string PostalCode { get; set; }
 
         public string DisplayAddress
